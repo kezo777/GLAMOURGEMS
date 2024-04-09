@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--GOOGLE TAG START-->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MVKLQM56');
+        </script>
+        <!--GOOGLE TAG END-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>Glamour Gems</title>
+        <meta name="description" content="Welcome to Glamour Gems, the ultimate online destination for exquisite jewellery. Browse our stunning collection of rings, earrings, necklaces, and more, crafted with the finest quality materials including gold, diamonds, and precious stones. Discover your perfect piece today.">
+        <meta name="referrer" content="origin">
+        <meta name="application-name" content="Glamour Gems">
+        <meta name="msapplication-starturl" content="https://kestookas.com/GLAMOURGEMS">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+        <link rel="stylesheet" href="kestocss/style.css">
+        <!--GLSL VERTEX SHADER BACKGROUND START -->
+        <script>
+            const shaderWebBackground={};(()=>{'use strict';const t=(a,b)=>{b.initHalfFloatRGBATexture(b.width,b.height);a.texParameteri(a.TEXTURE_2D,
+            a.TEXTURE_MIN_FILTER,a.LINEAR);a.texParameteri(a.TEXTURE_2D,a.TEXTURE_MAG_FILTER,
+            a.LINEAR);a.texParameteri(a.TEXTURE_2D,a.TEXTURE_WRAP_S,a.CLAMP_TO_EDGE);a.texParameteri(a.TEXTURE_2D,
+            a.TEXTURE_WRAP_T,a.CLAMP_TO_EDGE)},x=(a,b)=>{console.warn("shader-web-background cannot shade, adding fallback CSS classes");
+            document.documentElement.classList.add("shader-web-background-fallback");b.classList.add("shader-web-background-fallback");
+            if(a instanceof shaderWebBackground.GlError)console.warn("Not sufficient WebGL support:",
+            a);else throw a;};
+            function y(a,b){if(!a)throw new shaderWebBackground.ConfigError(b);}
+            function z(a){y(a instanceof HTMLCanvasElement,"config.canvas must be instance of canvas");
+            return a}
+            function A(){const a=document.createElement("canvas"),b=a.style;a.id="shader-web-background";b.width=
+            "100vw";b.height="100vh";b.position="fixed";b.top="0";b.left="0";b.zIndex=-9999;return a}
+            function B(a,b,c){y(a instanceof HTMLScriptElement&&a.type===b,'Shader source element of id "'+
+            c+'" should be of type: <script type="'+(b+'" id="'+c+'">'))}
+            function D(a){const b=document.getElementById(a);y(b,'Missing shader source: <script type="x-shader/x-fragment" id="'+
+            (a+'">'));B(b,"x-shader/x-fragment",a);return b.text}
+            function E(a){a+="Vertex";const b=document.getElementById(a);return b?(B(b,"x-shader/x-vertex",
+            a),b.text):"attribute vec2 V;void main(){gl_Position=vec4(V,0,1);}"}
+            function F(a,b){"loading"!==document.readyState?b():window.addEventListener(a,b)}
+            class G{constructor(a,b,c,d){this.g=c;const l=a.gl;this.h=()=>{for(const f of d)f.u(l,
+            f.location,b)};this.i=()=>{var f=c.v,h=a.gl;h.bindBuffer(h.ARRAY_BUFFER,a.j);h.enableVertexAttribArray(f);
+            h.vertexAttribPointer(f,2,h.FLOAT,!1,0,0);h.drawArrays(h.TRIANGLE_STRIP,0,4);h.disableVertexAttribArray(f);
+            h.bindBuffer(h.ARRAY_BUFFER,null);f=a.gl;for(h=0;h<a.g;h++)f.activeTexture(f.TEXTURE0+
+            h),f.bindTexture(f.TEXTURE_2D,null);a.g=0}}}
+            function H(a){var b={antialias:!1,depth:!1,alpha:!1};try{return new I(a,b)}catch(c){throw new shaderWebBackground.GlError(c.message);
+            }}
+            function J(a,b,c,d,l,f){function h(e,m,n){try{{var k=p;const q=k.gl,P=K(k,e,q.VERTEX_SHADER,m),
+            Q=K(k,e,q.FRAGMENT_SHADER,n),v=q.createProgram();q.attachShader(v,P);q.attachShader(v,
+            Q);q.linkProgram(v);var r=v}return r}catch(q){throw new shaderWebBackground.ConfigError(q.message);
+            }}const p=H(a),w=[],g={gl:p.gl,canvas:a,width:0,height:0,cssPixelRatio:0,cssWidth:0,
+            cssHeight:0,isOverShader:(e,m)=>{const n=a.getBoundingClientRect();return e>=n.left&&
+            e<=n.right&&m>=n.top&&m<=n.bottom},toShaderX:e=>(e-a.getBoundingClientRect().left)*
+            g.cssPixelRatio+.5,toShaderY:e=>a.height-(e-a.getBoundingClientRect().top)*g.cssPixelRatio-
+            .5,s:()=>g.cssWidth!==a.clientWidth||g.cssHeight!==a.clientHeight?(g.resize(),!0):
+            !1,resize:()=>{const e=window.devicePixelRatio||1,m=a.clientWidth,n=a.clientHeight,
+            k=Math.floor(m*e),r=Math.floor(n*e);a.width=k;a.height=r;g.width=k;g.height=r;g.cssPixelRatio=
+            e;g.cssWidth=m;g.cssHeight=n;p.gl.viewport(0,0,p.canvas.width,p.canvas.height);for(const q of w)q.g.l(k,
+            r)},texture:(e,m)=>{{var n=p;const k=n.gl;m=m instanceof L?m.g:m;k.activeTexture(k.TEXTURE0+
+            n.g);k.bindTexture(k.TEXTURE_2D,m);k.uniform1i(e,n.g++)}},buffers:{},initHalfFloatRGBATexture:(e,
+            m)=>{p.h.g(e,m)}},R=Object.keys(b).length-1;let S=0;for(const e in b){if(S++<R){const k=
+            b[e].texture||t;g.buffers[e]=M(p,()=>{k(p.gl,g)})}const m=N(p,h(e,E(e),D(e)),g.buffers[e]),
+            n=b[e].uniforms||{};var u=Object.keys(n);for(const k of m.m)y(n[k.name],'No configuration for uniform "'+
+            k.name+'" defined in shader "'+e+'"'),u=u.filter(r=>r!==k.name);0!==u.length&&console.warn('Extra uniforms configured for shader "'+
+            e+'", which are not present in the shader code - might have been removed by GLSL compiler if not used: '+
+            u.join(", "));u=m.m.map(k=>({location:k.location,u:n[k.name]}));w.push(new G(p,g,
+            m,u))}const C=()=>{g.s()&&d&&d(g.width,g.height,g);l&&l(g);for(const e of w)e.g.i(e.h,
+            e.i);f&&f(g);requestAnimationFrame(C)};F("load",()=>{g.resize();c&&c(g);d&&d(g.width,
+            g.height,g);requestAnimationFrame(C)});return g}
+            shaderWebBackground.Error=class extends Error{constructor(a){super(a);this.name="shaderWebBackground.Error"}};
+            shaderWebBackground.ConfigError=class extends shaderWebBackground.Error{constructor(a){super(a);
+            this.name="shaderWebBackground.ConfigError"}};
+            shaderWebBackground.GlError=class extends shaderWebBackground.Error{constructor(a){super(a);this.name=
+            "shaderWebBackground.GlError"}};
+            shaderWebBackground.shade=function(a){y(a,"Missing config argument");const b=a.canvas?
+            z(a.canvas):A();y(a.shaders,"No shaders specified in config");try{const c=J(b,a.shaders,
+            a.onInit,a.onResize,a.onBeforeFrame,a.onAfterFrame);a.canvas||F("DOMContentLoaded",
+            ()=>{document.body.appendChild(b)});return c}catch(c){(a.onError||x)(c,b)}};const O=[-1,1,1,1,-1,-1,1,-1];
+            function T(a,b){return a.j(a.gl.getExtension(b),b+" extension is not supported")}
+            class U{constructor(a,b){this.gl=a;this.j=b}g(){}}
+            class V extends U{constructor(a,b){super(a,b);this.h=T(this,"OES_texture_half_float");
+            T(this,"OES_texture_half_float_linear")}g(a,b){const c=this.gl;c.texImage2D(c.TEXTURE_2D,
+            0,c.RGBA,a,b,0,c.RGBA,this.h.HALF_FLOAT_OES,null)}}
+            class W extends U{constructor(a,b){super(a,b);T(this,"EXT_color_buffer_float");this.gl.getExtension("OES_texture_float_linear")}g(a,
+            b){const c=this.gl;c.texImage2D(c.TEXTURE_2D,0,c.RGBA16F,a,b,0,c.RGBA,c.HALF_FLOAT,
+            null)}}
+            function X(a){a=a.split(/\r?\n/);const b=a.length.toString().length;var c=[];a.forEach((d,
+            l)=>{l=(l+1).toString();l=l.length>=b?l:" ".repeat(b-l.length)+l;c.push(l+": "+d+
+            "\n")});return c.join("")}function M(a,b){return new L(a.gl,()=>{b(a.gl)})}
+            function N(a,b,c){const d=a.gl;a=[];const l=d.getProgramParameter(b,d.ACTIVE_UNIFORMS);
+            for(let f=0;f<l;f++){const h=d.getActiveUniform(b,f);a.push({name:h.name,location:d.getUniformLocation(b,
+            h.name)})}return{v:d.getAttribLocation(b,"V"),m:a,l:c?(f,h)=>c.l(f,h):()=>{},i:(f,
+            h)=>{d.useProgram(b);f();c?(f=c.g,c.g=c.h,c.h=f,c.i(h)):h()}}}
+            function K(a,b,c,d){a=a.gl;c=a.createShader(c);a.shaderSource(c,d);a.compileShader(c);
+            if(!a.getShaderParameter(c,a.COMPILE_STATUS)){const l=String(a.getShaderInfoLog(c));
+            a.deleteShader(c);b="Cannot compile shader - "+b+": "+l;console.log(b);console.log(X(d));
+            throw Error(b);}return c}
+            class I{constructor(a,b){this.canvas=a;const c=(l,f)=>{if(!l)throw Error(f);return l};
+            let d=a.getContext("webgl2",b);if(d)this.h=new W(d,c);else if(d=a.getContext("webgl",
+            b))this.h=new V(d,c);c(d,"webgl context not supported on supplied canvas element: "+
+            a);this.gl=d;a=d.createBuffer();d.bindBuffer(d.ARRAY_BUFFER,a);d.bufferData(d.ARRAY_BUFFER,
+            new Float32Array(O),d.STATIC_DRAW);d.bindBuffer(d.ARRAY_BUFFER,null);this.j=a;this.buffers=
+            {};this.g=0}}
+            function Y(a){const b=a.gl,c=b.createTexture();b.bindTexture(b.TEXTURE_2D,c);a.o(b);
+            b.bindTexture(b.TEXTURE_2D,null);return c}
+            class L{constructor(a,b){this.j=a.createFramebuffer();this.gl=a;this.o=b;this.g=this.h=
+            null}l(){this.h&&this.gl.deleteTexture(this.h);this.g&&this.gl.deleteTexture(this.g);
+            this.h=Y(this);this.g=Y(this)}i(a){const b=this.gl;b.bindFramebuffer(b.FRAMEBUFFER,
+            this.j);b.framebufferTexture2D(b.FRAMEBUFFER,b.COLOR_ATTACHMENT0,b.TEXTURE_2D,this.g,
+            0);a();b.framebufferTexture2D(b.FRAMEBUFFER,b.COLOR_ATTACHMENT0,b.TEXTURE_2D,null,
+            0);b.bindFramebuffer(b.FRAMEBUFFER,null)}};})()
+              
+        </script>
+        <script>
+            const ONE_IN_3D = [1, 1, 1];
+            const c1 = [3.54585104, 2.93225262, 2.41593945];
+            const x1 = [0.69549072, 0.49228336, 0.27699880];
+            const y1 = [0.02312639, 0.15225084, 0.52607955];
+            const c2 = [3.90307140, 3.21182957, 3.96587128];
+            const x2 = [0.11748627, 0.86755042, 0.66077860];
+            const y2 = [0.84897130, 0.88445281, 0.73949448];
+            const saturate = (x) => Math.min(Math.max(x, 0), 1);
+            const to3d = (x) => [x, x, x];
+            const add3d = (x, y) => [x[0] + y[0], x[1] + y[1], x[2] + y[2]];
+            const subtract3d = (x, y) => [x[0] - y[0], x[1] - y[1], x[2] - y[2]];
+            const multiply3d = (x, y) => [x[0] * y[0], x[1] * y[1], x[2] * y[2]];
+            const pow23d = (x) => multiply3d(x, x);
+            const saturate3d = (x) => [saturate(x[0]), saturate(x[1]), saturate(x[2])];
+            const bump3y = (x, yoffset) => saturate3d(subtract3d(subtract3d(ONE_IN_3D, pow23d(x)), yoffset));
+            const spectral_zucconi6 = (x) => add3d(bump3y(multiply3d(c1, subtract3d(to3d(x), x1)), y1), bump3y(multiply3d(c2, subtract3d(to3d(x), x2)), y2));
+        </script>
+        <script type="x-shader/x-fragment" id="feedback">
+            precision highp float;
+            
+            uniform vec2      iResolution;
+            uniform float     iMinDimension;
+            uniform sampler2D iChannel0;
+            uniform vec2      iScreenRatioHalf;
+            uniform vec2      iFeedbackZoomCenter;
+            uniform float     iFeedbackZoomRate;
+            uniform vec2      iFeedbackShiftVector;
+            uniform float     iFeedbackFadeRate;
+            uniform float     iFeedbackColorShiftZoom;
+            uniform float     iFeedbackColorShiftImpact;
+            uniform vec2      iDrawCenter;
+            uniform float     iDrawIntensity;
+            uniform float     iBlobEdgeSmoothing;
+            uniform float     iBlob1Radius;
+            uniform float     iBlob1PowFactor;
+            uniform vec3      iBlob1Color;
+            uniform float     iBlob2Radius;
+            uniform float     iBlob2PowFactor;
+            uniform vec3      iBlob2Color;
+            uniform float     iColorShiftOfRadius;
+            
+            /*
+              Normally it would be provided by texture parameters, but on iOS the texture REPEAT works only
+              for textures which size is the power of 2.
+             */
+            vec4 repeatedTexture(in sampler2D channel, in vec2 uv) {
+              return texture2D(channel, mod(uv, 1.));
+            }
+            
+            float drawBlob(
+              in vec2 st,
+              in vec2 center,
+              in float radius,
+              in float edgeSmoothing
+            ) {
+              float dist = length((st - center) / radius);
+              return dist * smoothstep(1., 1. - iBlobEdgeSmoothing, dist);
+            }
+            
+            void main() {
+              vec2 uv = gl_FragCoord.xy / iResolution;
+              vec2 st = (gl_FragCoord.xy * 2. - iResolution) / iMinDimension;
+            
+              float drawDist = length(st - iDrawCenter);
+            
+              vec3 colorShift = repeatedTexture(
+                iChannel0,
+                uv - st * iFeedbackColorShiftZoom * iScreenRatioHalf
+              ).rgb;
+            
+              vec2 stShift = vec2(0);
+              stShift += iFeedbackZoomRate * (st - iFeedbackZoomCenter);
+              stShift += (colorShift.rg - .5) * iFeedbackColorShiftImpact;
+              stShift += iFeedbackShiftVector;
+              stShift *= iScreenRatioHalf;
+            
+              vec3 prevColor = repeatedTexture(iChannel0, uv - stShift).rgb;
+              prevColor *= iFeedbackFadeRate;
+            
+              vec3 drawColor = vec3(0);
+            
+              float radius =
+                1.
+                + (colorShift.r + colorShift.g + colorShift.b) * iColorShiftOfRadius;
+              drawColor +=
+                pow(
+                  drawBlob(st, iDrawCenter, radius * iBlob1Radius, iBlobEdgeSmoothing),
+                  iBlob1PowFactor
+                ) * iBlob1Color;
+              drawColor +=
+                pow(
+                  drawBlob(st, iDrawCenter, radius * iBlob2Radius, iBlobEdgeSmoothing),
+                  iBlob2PowFactor
+                ) * iBlob2Color;
+            
+              vec3 color = vec3(0);
+              drawColor *= iDrawIntensity;
+              prevColor *= iFeedbackFadeRate;
+              color += prevColor;
+              color += drawColor;
+            
+              color = clamp(color, 0., 1.);
+              gl_FragColor = vec4(color, 1.);
+            }
+        </script>
+        <script type="x-shader/x-fragment" id="image">
+            precision highp float;
+            
+            uniform vec2 iResolution;
+            uniform sampler2D iChannel0;
+            
+            void main(){
+              gl_FragColor = texture2D(iChannel0, gl_FragCoord.xy / iResolution);
+            }
+        </script>
+        <script>
+            var time;
+            
+            var minDimension;
+            var screenRatioHalfX;
+            var screenRatioHalfY;
+            
+            var mouseX;
+            var mouseY;
+            
+            var stMouseX;
+            var stMouseY;
+            
+            var tiltLR = 0;
+            var tiltFB = 0;
+            var tiltFBDelta = null;
+            
+            var feedbackShiftVectorX;
+            var feedbackShiftVectorY;
+            
+            var oldScrollY;
+            
+            var drawCenterX;
+            var drawCenterY;
+            
+            const feedbackMouseShiftFactor = .003;
+            const feedbackTiltShiftFactor = .0002;
+            const backgroundParallaxScrollingFactor = .5;
+            const blob1ColorPulseSpeed = .04;
+            const blob2ColorPulseSpeed = .04;
+            const blob2ColorPulseShift = .5;
+            const drawCenterShiftDownScale = .99;
+            
+            var blob1Color;
+            var blob2Color;
+            
+            const loadScript = (src) => new Promise((resolve, reject) => {
+              const script = document.createElement("script");
+              script.src = src;
+              script.type = "text/javascript";
+              script.async = true;
+              script.onload = resolve;
+              script.onerror = reject;
+              document.head.appendChild(script);
+            });
+            
+            const onWindowLoad = () => new Promise((resolve) => {
+              window.addEventListener("load", resolve);
+            });
+            
+            function goFullScreen(canvas, noSleep) {
+              screenfull.on("change", () => {
+                if (!screenfull.isFullscreen) {
+                  noSleep.disable();
+                }
+              });
+              screenfull
+                .request(canvas)
+                .then(() => noSleep.enable());
+            }
+            
+            function newButton(label, action) {
+              const button = document.createElement("button");
+              button.textContent = label;
+              button.addEventListener("click", action);
+              return button;
+            }
+            
+            function addControl(control) {
+              document
+                .getElementById("controls")
+                .appendChild(control);
+            }
+            
+            function maybeAddFullScreenAction() {
+              if (screenfull.isEnabled) {
+                const canvas = document.getElementById("shader-web-background");
+                const noSleep = new NoSleep();
+                addControl(
+                  newButton(
+                    "Go Full Screen",
+                    () => goFullScreen(canvas, noSleep)
+                  )
+                );
+              }
+            }
+            
+            function handleDeviceOrientationChange(event) {
+              if (event.beta) {
+                if (tiltFBDelta) {
+                  tiltFB = event.beta - tiltFBDelta;
+                } else { 
+                  tiltFBDelta = event.beta;
+                  tiltFB = 0;
+                }
+              }
+              if (event.gamma) {
+                tiltLR = event.gamma;
+              }
+            }
+            
+            const deviceOrientationEvent = "deviceorientation";
+            
+            function trackDeviceOrientation() {
+              window.addEventListener(deviceOrientationEvent, handleDeviceOrientationChange, false);
+            }
+            
+            function untrackDeviceOrientation() {
+              window.removeEventListener(deviceOrientationEvent, handleDeviceOrientationChange, false);
+            }
+            
+            function calibrateDeviceOrientation() {
+              tiltFBDelta = null;
+            }
+            
+            function initDeviceOrientation() {
+              if (DeviceOrientationEvent.requestPermission) {
+                DeviceOrientationEvent.requestPermission()
+                  .then(response => {
+                    if (response == "granted") {
+                      tiltFBDelta = null;
+                      untrackDeviceOrientation(); 
+                      trackDeviceOrientation();
+                    }
+                  })
+                  .catch(console.error);
+              } else {
+                trackDeviceOrientation();
+                tiltFBDelta = null;
+              }
+            }
+            
+            function maybeAddCalibrateDeviceOrientationAction() {
+              if (window.DeviceOrientationEvent) {
+               addControl(
+                  newButton(
+                    "Calibrate Device Orientation",
+                    () => initDeviceOrientation()
+                  )
+                );
+              }
+            }
+            
+            function maybeAddActions() {
+              maybeAddCalibrateDeviceOrientationAction();
+              maybeAddFullScreenAction();
+            }
+            
+            if (window.DeviceOrientationEvent) {
+              if (!DeviceOrientationEvent.requestPermission) {
+                trackDeviceOrientation();
+              }
+            }
+            
+            document.addEventListener("mousemove", (event) => {
+               mouseX = event.clientX;
+               mouseY = event.clientY;
+            });
+            
+            onWindowLoad()
+              .then(() => Promise.all([
+                loadScript("../../unpkg.com/screenfull%406.0.2/dist/screenfull.js"),
+                loadScript("../../unpkg.com/nosleep.js%400.12.0/dist/NoSleep.min.js")
+              ]))
+              .then(maybeAddActions);
+            
+            shaderWebBackground.shade({
+              onInit: (ctx) => {
+                mouseX = ctx.cssWidth / 2.;
+                mouseY = ctx.cssHeight / 2.;
+                oldScrollY = window.scrollY;
+                drawCenterX = 0;
+                drawCenterY = 0;
+              },
+              onResize: (width, height) => {
+                minDimension = Math.min(width, height);
+                if (width >= height) {
+                  screenRatioHalfX = height / width * .5;
+                  screenRatioHalfY = .5;
+                } else {
+                  screenRatioHalfX = .5;
+                  screenRatioHalfY = width / height * .5;
+                }
+              },
+              onBeforeFrame: (ctx) => {
+                stMouseX = (2 * ctx.toShaderX(mouseX) - ctx.width) / minDimension;
+                stMouseY = (2 * ctx.toShaderY(mouseY) - ctx.height) / minDimension;
+                time = performance.now() / 1000;
+                const scrollY = window.scrollY;
+                const scrollYDelta = scrollY - oldScrollY;
+                if (scrollYDelta === 0) {
+                  feedbackShiftVectorY = 0;
+                } else {
+                  feedbackShiftVectorY =
+                    scrollYDelta / minDimension
+                    * 2 * ctx.cssPixelRatio
+                    * backgroundParallaxScrollingFactor;
+                  drawCenterY += feedbackShiftVectorY;
+                }
+                oldScrollY = scrollY;
+                if (tiltFBDelta) { 
+                  feedbackShiftVectorX = tiltLR * feedbackTiltShiftFactor;
+                  feedbackShiftVectorY += tiltFB * -feedbackTiltShiftFactor;
+                } else {
+                  feedbackShiftVectorX = stMouseX * feedbackMouseShiftFactor;
+                  feedbackShiftVectorY += stMouseY * feedbackMouseShiftFactor;
+                }
+                blob1Color = spectral_zucconi6((time * blob1ColorPulseSpeed) % 1);
+                blob2Color = spectral_zucconi6((time * blob2ColorPulseSpeed + blob2ColorPulseShift) % 1);
+              },
+              shaders: {
+                feedback: {
+                  uniforms: {
+                    iResolution:               (gl, loc, ctx) => gl.uniform2f(loc, ctx.width, ctx.height),
+                    iMinDimension:             (gl, loc) => gl.uniform1f(loc, minDimension),
+                    iScreenRatioHalf:          (gl, loc) => gl.uniform2f(loc, screenRatioHalfX, screenRatioHalfY),
+                    iFeedbackZoomCenter:       (gl, loc) => gl.uniform2f(loc, 0, 0),
+                    iFeedbackZoomRate:         (gl, loc) => gl.uniform1f(loc, .001),
+                    iFeedbackShiftVector:      (gl, loc) => gl.uniform2f(loc, feedbackShiftVectorX, feedbackShiftVectorY),
+                    iFeedbackFadeRate:         (gl, loc) => gl.uniform1f(loc, .999),
+                    iFeedbackColorShiftZoom:   (gl, loc) => gl.uniform1f(loc, .2),
+                    iFeedbackColorShiftImpact: (gl, loc) => gl.uniform1f(loc, .004),
+                    iDrawCenter:               (gl, loc) => gl.uniform2f(loc, drawCenterX, drawCenterY),
+                    iDrawIntensity:            (gl, loc) => gl.uniform1f(loc, .35),
+                    iBlobEdgeSmoothing:        (gl, loc) => gl.uniform1f(loc, .04),
+                    iBlob1Radius:              (gl, loc) => gl.uniform1f(loc, .3),
+                    iBlob1PowFactor:           (gl, loc) => gl.uniform1f(loc, 40.),
+                    iBlob1Color:               (gl, loc) => gl.uniform3f(loc, blob1Color[0], blob1Color[1], blob1Color[2]),
+                    iBlob2Radius:              (gl, loc) => gl.uniform1f(loc, .4),
+                    iBlob2PowFactor:           (gl, loc) => gl.uniform1f(loc, 40.),
+                    iBlob2Color:               (gl, loc) => gl.uniform3f(loc, blob2Color[0], blob2Color[1], blob2Color[2]),
+                    iColorShiftOfRadius:       (gl, loc) => gl.uniform1f(loc, .5),
+                    iChannel0:                 (gl, loc, ctx) => ctx.texture(loc, ctx.buffers.feedback)
+                  }
+                },
+                image: {
+                  uniforms: {
+                    iResolution: (gl, loc, ctx) => gl.uniform2f(loc, ctx.width, ctx.height),
+                    iChannel0: (gl, loc, ctx) => ctx.texture(loc, ctx.buffers.feedback),
+                  }
+                }
+              },
+              onAfterFrame: () => {
+                drawCenterY *= drawCenterShiftDownScale;
+              },
+              onError: (error, canvas) => {
+                document.documentElement.classList.add("fallback-background");
+                if (error instanceof shaderWebBackground.GlError) {
+                  console.log("Could not shade, adding fallback CSS classes:", error);
+                  window.alert(
+                    "The shader-web-background does not support your device/browser, therefore "
+                      + "you cannot experience what is described here, try with another device");
+                } else {
+                  throw error;
+                }
+              }
+            });
+        </script>
+        <!--GLSL VERTEX SHADER BACKGROUND END-->
+    </head>
+    <body>
+        <!--GOOGLE TAG MANAGER (NONSCRIPT) START-->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVKLQM56"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!--GOOGLE TAG MANAGER (NONSCRIPT) END-->
+        <!--MODAL FOR INTERNET EXPLORER START -->
+        <div id="ieModal" class="iemodal">
+            <div class="iemodal-content">
+                <span class="ieclose" onclick="closeModal()">×</span>
+                <p>We recommend using <strong>Google Chrome</strong> for the best experience on our website.</p>
+                <a href="https://www.google.com/chrome/" class="download-link">Download Google Chrome</a>
+            </div>
+        </div>
+        <!--MODAL FOR INTERNET EXPLORER START -->
+        <!--CHECK IF BROWSER IS THAT OLD CRAPPY IE JS START-->
+        <script>
+            if (navigator.userAgent.indexOf('MSIE') !== -1 || !!document.documentMode) {
+            //DISPLAY MODAL FOR IE USERS
+            var ieModal = document.getElementById("ieModal");
+            ieModal.style.display = "block";
+            }
+            //MODAL FOR IE USERS CLOSE FUNCTION
+            function closeModal() {
+            var ieModal = document.getElementById("ieModal");
+            ieModal.style.display = "none";
+            }
+        </script>
+        <!--CHECK IF BROWSER IS THAT OLD CRAPPY IE JS END-->
+        <!--INTRO SECTION START-->	
+        <div id="main">
+            <h1 id="title">Glamour Gems</h1>
+        </div>
+        <!--INTRO SECTION END-->	
+        <!--NAVBAR START -->	
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        <!--NAVBAR END -->	
+        <!--COLLECTION MAIN CONTAINER START-->
+        <div class="collection"  id="collection">
+            <h2>Collection</h2>
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/orange/orange1.jpg" alt="Celestial Mirage Ring" title="Celestial Mirage Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/orange/orange2.jpg" alt="Celestial Mirage Ring" title="Celestial Mirage Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/orange/orange3.jpg" alt="Celestial Mirage Ring" title="Celestial Mirage Ring"></div>
+                <div class="info">
+                    <p>
+                        Celestial Mirage
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Celestial Mirage” ring, priced at a value of 3.000.000 USD.<br>
+
+                                 Gemstone: A captivating raw, uncut sapphire takes center stage. Its natural form, with intricate internal patterns and golden veins, evokes untamed elegance.<br>
+
+                                Setting: The minimalist prong setting cradles the sapphire, allowing its raw beauty to shine through.<br>
+
+                                Band: A pavé band, meticulously adorned with diamonds, complements the sapphire. The juxtaposition of organic allure and refined luxury creates a harmonious masterpiece. <br>
+
+                                 Lifetime warranty, free shipping, returns, and engraving.<br>
+
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/burgundy/burgundy1.jpg" alt="Veins of Greenland Ring" title="Veins of Greenland Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/burgundy/burgundy2.jpg" alt="Veins of Greenland Ring" title="Veins of Greenland Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/burgundy/burgundy3.jpg" alt="Veins of Greenland Ring" title="Veins of Greenland Ring"></div>
+                <div class="info">
+                    <p>
+                     Veins of Greenland   
+                      <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal1">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal1" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Veins of Greenland” ring, priced at a value of 1.004.000 USD.<br>
+                                
+                                Gemstone: A captivating oval-cut emerald, boasting vibrant hues and impeccable clarity. Its mesmerizing green color evokes sophistication.<br>
+
+                                Setting: The gem is meticulously set in a luxurious platinum band, adorned with intricate artistry.<br>
+
+                                Diamonds: The band is encrusted with an array of sparkling diamonds, exuding opulence.<br>
+
+                                Design: The ring harmoniously marries traditional elegance with contemporary sophistication, making it a coveted masterpiece for connoisseurs of fine jewelry.<br>
+                                
+                                Lifetime warranty, free shipping, returns, and engraving.
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton1" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/black/black1.jpg" alt="Timeless Luminescence  Ring" title="Timeless Luminescence  Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/black/black2.jpg" alt="Timeless Luminescence  Ring" title="Timeless Luminescence  Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/black/black3.jpg" alt="Timeless Luminescence  Ring" title="Timeless Luminescence  Ring"></div>
+                <div class="info">
+                    <p>
+                      Timeless Luminescence 
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal2">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal2" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Timeless Luminescence” ring, priced at a value of 4.070.000 USD.<br>
+                                
+                                Gemstone: A captivating round-cut diamond, meticulously set in a classic four-prong setting. Its scintillating fire and brilliance are accentuated by the polished, sleek platinum band, epitomizing timeless elegance.<br>
+
+                                Craftsmanship: Every facet dances in harmony, reflecting light with exceptional sparkle, making this solitaire ring a quintessential choice for those seeking understated yet captivating luxury.<br>
+
+                                This ring captures attention with its radiant sparkle and refined craftsmanship, appealing to discerning connoisseurs.<br>
+
+                                Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton2" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/green/green1.jpg" alt=" Celestial Serenade Ring" title=" Celestial Serenade Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/green/green2.jpg" alt=" Celestial Serenade Ring" title=" Celestial Serenade Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/green/green3.jpg" alt=" Celestial Serenade Ring" title=" Celestial Serenade Ring"></div>
+                <div class="info">
+                    <p>
+                       Celestial Serenade
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal3">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal3" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Celestial Serenade” ring, priced at a value of 7.500.000 USD.<br>
+                                
+                                In the quietude of moon-kissed nights, Where stars whisper secrets to the sky, Lies a ring—a symphony of light, A dance of diamonds, forever nigh.<br>
+
+                                Two souls entwined, like cosmic threads, Round-cut gems, celestial in grace, Their brilliance weaves eternal threads, A love story etched in time and space.<br>
+
+                                The platinum band, a silken stream, Carved by stardust, kissed by dawn, Each facet gleams, a whispered dream, Eternal harmony, forever drawn.<br>
+
+                                Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton3" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/grey/grey1.jpg" alt="Emerald Enigma Solitaire Ring" title="Emerald Enigma Solitaire Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/grey/grey2.jpg" alt="Emerald Enigma Solitaire Ring" title="Emerald Enigma Solitaire Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/grey/grey3.jpg" alt="Emerald Enigma Solitaire Ring" title="Emerald Enigma Solitaire Ring"></div>
+                <div class="info">
+                    <p>
+                        Emerald Enigma
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal4">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal4" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Emerald Enigma Solitaire ” ring, priced at a value of 1.700.000 USD.<br>
+                                
+                                In the heart of this enigmatic ring lies a cushion-cut emerald, its verdant depths concealing secrets like ancient forests. The gem, adorned with intricate web-like inclusions, whispers tales of forgotten realms.<br>
+                                
+                                The gold band, elegantly twisted, cradles the emerald, a dance of light and shadow.<br>
+                                
+                                Its lustrous finish enhances the gem’s brilliance, inviting contemplation and wonder. Behold the Emerald Enigma, a portal to mystical dimensions.<br>
+
+                                Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton4" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/meteor/meteor1.jpg" alt="Stellar Whispers Solitaire Ring" title="Stellar Whispers Solitaire Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/meteor/meteor2.jpg" alt="Stellar Whispers Solitaire Ring" title="Stellar Whispers Solitaire Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/meteor/meteor4.jpeg" alt="Stellar Whispers Solitaire Ring" title="Stellar Whispers Solitaire Ring"></div>
+                <div class="info">
+                    <p>
+                        Stellar Whispers
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal5">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal5" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Stellar Whispers” ring, priced at a value of 7.070.700 USD.<br>
+                                
+                                In the heart of this celestial creation lies a cushion-cut emerald, its verdant depths concealing cosmic secrets. But what sets this ring apart is its band—a slice of the cosmos itself.<br>
+                                
+                                Forged from Gibeon meteorite, it bears the famed Widmanstätten pattern, etched by meteoric journeys spanning eons. Within this extraterrestrial relic, enchanting blue crystals mimic distant galaxies, their dance frozen in time.<br>
+                                
+                                The result? A captivating masterpiece — “Stellar Whispers” — where Earth and stars converge.<br>
+                                
+                                Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton5" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/pink/pink1.jpg" alt="Forever Serenade Ring" title="Forever Serenade Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/pink/pink2.jpg" alt="Forever Serenade Ring" title="Forever Serenade Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/pink/pink3.jpg" alt="Forever Serenade Ring" title="Forever Serenade Ring"></div>
+                <div class="info">
+                    <p>
+                      Forever Serenade
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal6">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal6" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Forever Serenade” ring, priced at a value of 4.150.000 USD.<br>
+                                
+                                Introducing “Forever Serenade”, a celestial symphony captured in gold and gemstones.<br>
+                                
+                                The lustrous band cradles a brilliant-cut sapphire, reminiscent of a midnight sky. Encircling it, diamond constellations twinkle, their facets echoing distant stars.<br>
+                                
+                                The milgrain detailing evokes cosmic dust, while the scrollwork gallery conceals secrets of the universe.<br>
+                                
+                                This ring harmonizes elegance and mystique, inviting wearers to dance with the cosmos. Truly, “Forever Serenade” is a cosmic crescendo for the discerning soul.<br>
+
+                                Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton6" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/redgrey/redgrey1.jpg" alt="The Crimson Enchantment Ring" title="The Crimson Enchantment Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/redgrey/redgrey2.jpg" alt="The Crimson Enchantment Ring" title="The Crimson Enchantment Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/redgrey/redgrey3.jpg" alt="The Crimson Enchantment Ring" title="The Crimson Enchantment Ring"></div>
+                <div class="info">
+                    <p>
+                      The Crimson Enchantment
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal7">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal7" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “The Crimson Enchantment” ring, priced at a value of 1.840.000 USD.<br>
+                                
+                                Introducing “The Crimson Enchantment”, a mesmerizing ring that transcends mere adornment. Crafted with meticulous artistry, it features a blood-red quartz composite – a gem that whispers secrets of ancient alchemy.<br>
+                                
+                                The faceted stone, ensconced in platinum prongs, radiates an otherworldly allure. Its fiery depths, reminiscent of forbidden elixirs, dance with enigmatic patterns.<br>
+                                
+                                The band, a symphony of transparency and opulence, bears intricate carvings – a testament to the jeweler’s mastery. The Crimson Enchantment: a talisman for those who seek mystique and passion.<br>
+
+                                Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton7" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/violet/violet1.jpg" alt="The Abyssal Enigma Ring" title="The Abyssal Enigma Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/violet/violet2.jpg" alt="The Abyssal Enigma Ring" title="The Abyssal Enigma Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/violet/violet3.jpg" alt="The Abyssal Enigma Ring" title="The Abyssal Enigma Ring"></div>
+                <div class="info">
+                    <p>
+                      The Abyssal Enigma
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal8">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal8" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “The Abyssal Enigma” ring, priced at a value of 6.800.000 USD.<br>
+                                
+                                Introducing “The Abyssal Enigma”, a mesmerizing ring that transcends mere adornment.<br>
+                                
+                                Crafted with meticulous artistry, it features an enigmatic black gemstone, its surface echoing the depths of the ocean.<br>
+                                
+                                The stone is cradled in a luxurious white gold setting, adorned with intricate vine motifs and speckled with diamonds that cascade like stars amidst the midnight sky, illuminating the mysterious allure of this opulent creation.<br>
+                                
+                                The Abyssal Enigma: a talisman for those who seek mystique and luxury.<br>
+
+                                 Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton8" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/white/white1.jpg" alt="Aurora Majesty Ring" title="Aurora Majesty Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/white/white2.jpg" alt="Aurora Majesty Ring" title="Aurora Majesty Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/white/white3.jpg" alt="Aurora Majesty Ring" title="Aurora Majesty Ring"></div>
+                <div class="info">
+                    <p>
+                        Aurora Majesty
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal9">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal9" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Aurora Majesty” ring, priced at a value of 7.080.000 USD.<br>
+                                
+                                The “Aurora Majesty” ring, a celestial marvel that transcends mere adornment.<BR>
+                                  
+                                Its centerpiece, a golden rutilated quartz, resonates with cosmic energy, its inclusions akin to stardust trapped in amber.<BR>
+                                  
+                                The rose gold band, meticulously crafted, cradles the gem like a comet’s orbit. Pavé diamonds cascade along the shank, evoking constellations.<BR>
+                                  
+                                When worn, “Aurora Majesty” ignites the wearer’s spirit, a luminous journey through galaxies. Truly, a stellar heirloom.<BR>
+
+                                Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton9" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->	
+            <!--PRODUCT SECTION INSIDE COLLECTION START-->
+            <div class="tiles">
+                <div class="tile" data-scale="2.5" data-image="images/yellow/yellow1.jpg" alt="Ethereal Lumière Ring" title="Ethereal Lumière Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/yellow/yellow2.jpg" alt="Ethereal Lumière Ring" title="Ethereal Lumière Ring"></div>
+                <div class="tile" data-scale="2.5" data-image="images/yellow/yellow3.jpg" alt="Ethereal Lumière Ring" title="Ethereal Lumière Ring"></div>
+                <div class="info">
+                    <p>
+                      Ethereal Lumière
+                        <br>
+                        <br>
+                        <a class="npubcopybutton"   title="Item and purchasing information" href="#openModal10">More info</a> <!--REPLACE id FOR EACH-->
+                    </p>
+                    <div id="openModal10" class="modalbg">
+                        <!--REPLACE id FOR EACH-->
+                        <div class="dialog">
+                            <br>
+                            <p>
+                                The “Ethereal Lumière” ring, priced at a value of 5.100.000 USD.<br>
+                                
+                                This celestial ring, meticulously crafted in platinum, harmonizes elegance and brilliance with scientific precision.<br>
+
+                                Centerpiece: Nestled at its heart is an oval-cut diamond, meticulously faceted to maximize fire, scintillation, and clarity. The gem’s refractive index and brilliance are optimized through precise angles, ensuring a mesmerizing play of light.<br>
+
+                                Minimalist Prongs: These unobtrusive yet robust prongs, akin to molecular bonds, cradle the gem. Their tensile strength and stability prevent any deviation from perfection, allowing light to traverse unimpeded.<br>
+
+                                Band of Platinum: The band, forged in the crucible of craftsmanship, is a whisper of platinum. Its ductility and corrosion resistance ensure longevity, while its luminosity remains undiminished.<br>
+
+                                Legacy of Light: Ethereal Lumière transcends mere adornment. It is a luminous legacy, a testament to the interplay of material science, geometry, and artistry. Each facet reflects the cosmos, and every wearer becomes a celestial conduit.<br>
+                                
+                                Behold, Ethereal Lumière—a symphony of science and soul, where the tangible and intangible converge.Lifetime warranty, free shipping, returns, and engraving. <br>
+                                For more info and payment procedure please: <br>
+                                1. Contact us on <a class="otherlinks" href="https://iris.to/"  title="IRIS Communication platform" target="_blank"><span>IRIS<br></span></a>
+                                2. To login you will need your Private Key (nsec) and Reference Number <br>
+                                Your Reference Number is a number given to You by previous buyer <br>
+                                It looks like this: <code>KGDR39G5</code><br>
+                                3. Click the button bellow to copy our public key (npub) <br>
+                                <br>
+                                <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybutton10" class="npubinput"> <!--REPLACE id FOR EACH-->
+                                <button class="npubcopybutton" onclick="myFunction()" title="Copy npub">Copy npub</button>
+                                <br>
+                            </p>
+                            <a href="#close" title="Close" class="close text">Close</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--PRODUCT SECTION INSIDE COLLECTION END-->
+        </div>
+        <!--COLLECTION MAIN CONTAINER END-->
+        <!--ABOUT US SECTION START--->
+        <div  id="aboutus"></div>
+        <div class="aboutus" style=" margin-top: 0px;
+            padding: 8vmin;
+            text-align: center;">
+            <h2>About Us</h2>
+            <p>
+                GLAMOURGEMS is a secret society of jewellers who are specializing in creating exquisite and unique pieces of jewellery for the elite.<br> We use only the finest materials, such as diamonds, rubies, sapphires, emeralds, and pearls. We also incorporate rare and exotic elements, such as meteorites, fossils, and ancient artifacts. Our craftsmanship is unmatched, and our designs are inspired by art, history, and nature.<br>
+                GLAMOURGEMS operate in the shadows, and only accept clients who are referred by their existing members. We not advertise our services, nor we have a physical store. We communicate with our clients through encrypted messages via NOSTR client via decentralised messaging app IRIS, and deliver our products in discreet way. We also require our clients to pay with Bitcoin, the most popular cryptocurrency in the world.<br>
+                Bitcoin is the ideal payment method for GLAMOURGEMS, as it offers many benefits, especially privacy. Some of the benefits of Bitcoin are:
+                it is a decentralized, secure, fast, transparent, and anonymous cryptocurrency. No central authority is in control. A network of worldwide distributed computers verifies transactions. Cryptography and blockchain prevent fraud. Low fees and limited supply attract users. Multiple addresses and mixing services enhance privacy. GLAMOURGEMS and their clients trust and value Bitcoin. <br>For more information click <a class="linkhover" href="https://www.investopedia.com/terms/b/bitcoin.asp" title="What is Bitcoin" target="_blank">here</a>.
+            </p>
+        </div>
+        <!--ABOUT US SECTION END--->	
+        <!--CONTACTS SECTION START--->
+        <div  id="contacts"></div>
+        <div class="contacts" style=" margin-top: 0px;
+            padding: 8vmin;
+            text-align: center;">
+            <h2 >Contacts</h2>
+            <p>
+                Most of our freedom-loving clients are using NOSTR protocol via IRIS for communication with each other and GLAMOURGEMS. If you already use IRIS, click on a link bellow to log in with your credentials. You need your Private Key for full access and secret messaging.<a class="otherlinks" href="https://iris.to/" target="_blank"><span><br>Take me to IRIS<br></span></a>To connect with GLAMOURGEMS just copy our npub (publick key) by clicking the button bellow, and then paste it in a search bar in IRIS.
+                <br>
+                <br>
+            </p>
+            <input type="text" value="npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa" id="npubCopybuttonincontacts" class="npubinput">
+            <button class="npubcopybutton" onclick="myFunction()">Copy npub</button>
+            <br>
+            <br>
+            <script>
+                function myFunction() {
+                  var copyText = document.getElementById("npubCopybuttonincontacts");
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999); 
+                  navigator.clipboard.writeText(copyText.value);
+                  alert("You have copied our npub: " + copyText.value);
+                }
+            </script>
+            <p>However, we would like to help those, who still unfamiliar with this communications technology.
+                <br>
+                NOSTR is a protocol for building decentralized social networks that are censorship-resistant, privacy-preserving, and user-controlled. IRIS is a web and mobile client for NOSTR that allows you to create and manage your profile, follow other users, post messages, and earn rewards in Bitcoin.<br>
+                To use IRIS as a NOSTR client, please follow these simple instructions in the link bellow:
+                <br>
+                Visit <a  class="otherlinks" href="https://nostr.how/en/guides/iris" target="_blank"><span>Quick start with IRIS</span></a>.
+                <br>
+                <br>
+                <br>
+            <div id="nostr-embed" style="background: transparent;   text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                flex-wrap: nowrap !important;
+                align-content: space-around !important;
+                justify-content: space-between !important;
+                align-items: stretch !important;
+                margin: 0  !important;"></div>
+            <!--NOSTR EMBED JS START--->   
+            <script>
+                !(function () {
+                  const n=document.createElement('script');n.type='text/javascript';n.async=!0;n.src='https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@latest/dist/nostr-embed.js';
+                  n.onload=function () {
+                    nostrEmbed.init(
+                      'npub1dgqnwfzhcpdgjjzmg70x5e7hgzwq5pvfmm7tst27u7fvhy29mmzsg6lypa',
+                      '#nostr-embed',
+                      'wss://relay.nostr.band'
+                    );
+                  };const a=document.getElementsByTagName('script')[0];a.parentNode.insertBefore(n, a);
+                })();
+            </script>
+            <!--NOSTR EMBED JS END--->  
+            <!--BITCOIN LIVE PRICE WIDGET START-->
+            <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> 
+            <div class="livecoinwatch-widget-1" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#11b875" lcw-color-pr="#ad1833" lcw-color-bg="#251e25" lcw-border-w="0" ></div>
+            <!--BITCOIN LIVE PRICE WIDGET END-->
+            <a href="#main"><span class="footertext"> &copy;Glamourgems 2024</span></a>
+            <!--SITEMAP LINK START-->
+            <a href="sitemap.html">
+                <div class="sitemaplink">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2292 13.2292">
+                        <g transform="translate(.1968 -.2204)">
+                            <circle cx="3.0267" cy="5.5894" r="2.8369" style="fill:teal;fill-opacity:1;stroke:none;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"/>
+                            <path d="m.2351 6.0182 2.8947 4.7923 2.5753-4.791Z" style="fill:teal;fill-opacity:1;stroke:none;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"/>
+                            <circle cx="2.9932" cy="5.5559" r=".9493" style="fill:red;fill-opacity:1;stroke:none;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"/>
+                        </g>
+                        <path d="M6.8576 7.2597h2.4795V4.5792h2.5018v0" style="opacity:1;fill:none;fill-opacity:1;stroke:teal;stroke-width:.9;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" transform="translate(.0533 -.8002)"/>
+                        <path d="M10.8784 3.708v1.7424l1.6311-.9418z" style="opacity:1;fill:none;fill-opacity:1;stroke:teal;stroke-width:.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" transform="translate(.0533 -.8002)"/>
+                        <path d="M6.8576 7.2597h2.4795V4.5792h2.5018v0" style="opacity:1;fill:none;fill-opacity:1;stroke:teal;stroke-width:.9;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" transform="matrix(1 0 0 -1 .0509 13.7126)"/>
+                        <path d="M10.8784 3.708v1.7424l1.6311-.9418z" style="opacity:1;fill:none;fill-opacity:1;stroke:teal;stroke-width:.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" transform="matrix(1 0 0 -1 .0509 13.7126)"/>
+                        <path d="M10.953 6.4335V8.176l1.6312-.9418z" style="fill:none;fill-opacity:1;stroke:teal;stroke-width:.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" transform="translate(.0533 -.8002)"/>
+                        <path d="M6.8911 7.2541h5.1823v-.067" style="opacity:1;fill:none;fill-opacity:1;stroke:teal;stroke-width:.9;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" transform="translate(.0533 -.8002)"/>
+                    </svg>
+                </div>
+            </a>
+            <!--SITEMAP LINK END--->
+        </div>
+        <!--CONTACTS SECTION END--->
+        <script src="kestojs/varfonts.js"> </script> <!--VARIABLE FONT SCRIPT-->
+        <!--REMOVE HIGHLIGHT ON CLICK JS START-->
+        <script>
+            (function(doc) {
+            var dom_events = 'addEventListener' in doc,
+            e = doc.getElementsByTagName("body")[0],
+            _add_event_listener = function(type, callback) {
+            	// Basic cross-browser event handling
+            	if (dom_events) {
+            		doc.addEventListener(type, callback);
+            	} else {
+            		doc.attachEvent('on' + type, callback);
+            	}
+            },
+            _set_class = function(add) {
+            	if (add && ! e.classList.contains('no-focus')) {
+            		e.classList.add('no-focus');
+            	} else if (!add)    {
+            		e.classList.remove('no-focus');
+            	}
+            };
+            
+            _add_event_listener('mousedown', function() {
+            _set_class(true);
+            });
+            
+            _add_event_listener('keydown', function() {
+            _set_class(false);
+            });
+            
+            })(document);
+        </script>	
+        <!--REMOVE HIGHLIGHT ON CLICK JS END-->
+        <!--PHOTO ZOOM JS START-->
+        <script>
+            $('.tile')
+               .on('mouseover', function(){
+                 $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+               })
+               .on('mouseout', function(){
+                 $(this).children('.photo').css({'transform': 'scale(1)'});
+               })
+               .on('mousemove', function(e){
+                 $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+               })
+               .each(function(){
+                 $(this)
+                   .append('<div class="photo"></div>')
+                   .append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
+                   .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+               })
+        </script>
+        <!--PHOTO ZOOM JS END-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    </body>
+</html>

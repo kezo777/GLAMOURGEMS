@@ -1,0 +1,127 @@
+/*FONT IMPORT START*/
+@charset "utf-8";
+
+@font-face {
+  src: url('https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2');
+  font-family: 'Compressa VF';
+  font-style: normal;
+}
+
+/*HTML BODY ETC. DEFAULT CSS START*/
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Compressa VF';
+  text-wrap: balance;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: oklab(0.24 0.01 -0.01 / 0.85);
+}
+
+/*SCROLLBAR STYLE START*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d11b3d #211d26;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #211d26;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #11b875;
+  border-radius: 10px;
+  height: 30vh;
+  border: 3px solid #141117;
+}
+
+/*SCROLLBAR STYLE END*/
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+/*HTML BODY ETC. DEFAULT CSS END*/
+
+/*SITEMAP CSS START*/
+.sitemapwrapper {
+  background: oklab(0.24 0.01 -0.01 / 0.85);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  width: 80vw;
+  height: 10vh;
+  background: oklab(0.24 0.01 -0.01 / 0.85);
+  box-shadow: 6px 6px 28px #1a1319, -6px -6px 28px #c6213e;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 4vmin;
+  transform: skew(-9deg, 0deg);
+  transition: all 0.5s ease-in-out;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h2 {
+  transform: skewX(342deg);
+  font-size: 9vmin;
+  font-variation-settings: "wght" 400, "wdth" 41, "ital" 0.3;
+  color: #d11b3d;
+}
+
+.box:hover {
+  width: 60vw;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes swing-in-top-fwd {
+  0% {
+    opacity: 0;
+    transform: skew(-9deg, 0deg);
+  }
+
+  10% {
+    opacity: 1;
+    transform: skew(-9deg, 0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: skew(9deg, 0deg);
+  }
+}
+
+/*SITEMAP CSS END*/
+/*HTML BODY ETC DEFAULT CSS END*/
